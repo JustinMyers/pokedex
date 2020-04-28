@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  attack: 1
+  defense: 1
+  stamina: 1
+  gen: 1
+  legendary: false
+  caught: false
+  pokedexNumber: 1
+  ancestor_id: 1
+
+two:
+  name: MyString
+  attack: 1
+  defense: 1
+  stamina: 1
+  gen: 1
+  legendary: false
+  caught: false
+  pokedexNumber: 1
+  ancestor_id: 1

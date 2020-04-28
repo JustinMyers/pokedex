@@ -1,0 +1,32 @@
+<%= form_with(model: matchup, local: true) do |form| %>
+  <% if matchup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(matchup.errors.count, "error") %> prohibited this matchup from being saved:</h2>
+
+      <ul>
+        <% matchup.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :attacking_pokemon_type_id %>
+    <%= form.number_field :attacking_pokemon_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :defending_pokemon_type_id %>
+    <%= form.number_field :defending_pokemon_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :effectiveness %>
+    <%= form.text_field :effectiveness %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

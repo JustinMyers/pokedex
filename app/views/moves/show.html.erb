@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @move.name %>
+</p>
+
+<p>
+  <strong>Pokemon type:</strong>
+  <%= @move.pokemon_type_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @move.category %>
+</p>
+
+<p>
+  <strong>Power:</strong>
+  <%= @move.power %>
+</p>
+
+<p>
+  <strong>Energy:</strong>
+  <%= @move.energy %>
+</p>
+
+<p>
+  <strong>Cooldown:</strong>
+  <%= @move.cooldown %>
+</p>
+
+<p>
+  <strong>Pvp power:</strong>
+  <%= @move.pvp_power %>
+</p>
+
+<p>
+  <strong>Pvp energy:</strong>
+  <%= @move.pvp_energy %>
+</p>
+
+<p>
+  <strong>Pvp turns:</strong>
+  <%= @move.pvp_turns %>
+</p>
+
+<p>
+  <strong>Weather:</strong>
+  <%= @move.weather %>
+</p>
+
+<p>
+  <strong>Damage window min:</strong>
+  <%= @move.damage_window_min %>
+</p>
+
+<p>
+  <strong>Damage window max:</strong>
+  <%= @move.damage_window_max %>
+</p>
+
+<%= link_to 'Edit', edit_move_path(@move) %> |
+<%= link_to 'Back', moves_path %>

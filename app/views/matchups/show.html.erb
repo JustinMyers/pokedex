@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Attacking pokemon type:</strong>
+  <%= @matchup.attacking_pokemon_type_id %>
+</p>
+
+<p>
+  <strong>Defending pokemon type:</strong>
+  <%= @matchup.defending_pokemon_type_id %>
+</p>
+
+<p>
+  <strong>Effectiveness:</strong>
+  <%= @matchup.effectiveness %>
+</p>
+
+<%= link_to 'Edit', edit_matchup_path(@matchup) %> |
+<%= link_to 'Back', matchups_path %>

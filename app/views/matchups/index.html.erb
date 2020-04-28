@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Matchups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attacking pokemon type</th>
+      <th>Defending pokemon type</th>
+      <th>Effectiveness</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @matchups.each do |matchup| %>
+      <tr id="<%= matchup.id %>">
+        <td><%= PokemonType.where(id: matchup.attacking_pokemon_type_id).pluck(:name).first %> is</td>
+
+	<td>
+	<%= form_with(model: matchup, local: true) do |form| %>
+		<%= select_tag "matchup[effectiveness]", options_for_select(["Immune", "Not Very Effective", "Effective", "Super Effective"], matchup.effectiveness) %>
+		<%= form.submit %>
+	<% end %>
+	</td>
+
+        <td>against <%= PokemonType.where(id: matchup.defending_pokemon_type_id).pluck(:name).first %></td>
+
+        <td><%= link_to 'Show', matchup %></td>
+        <td><%= link_to 'Edit', edit_matchup_path(matchup) %></td>
+        <td><%= link_to 'Destroy', matchup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Matchup', new_matchup_path %>

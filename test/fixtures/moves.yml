@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  pokemon_type_id: 1
+  category: MyString
+  power: 1
+  energy: 1
+  cooldown: 1
+  pvp_power: 1
+  pvp_energy: 1
+  pvp_turns: 1
+  weather: MyString
+  damage_window_min: 1
+  damage_window_max: 1
+
+two:
+  name: MyString
+  pokemon_type_id: 1
+  category: MyString
+  power: 1
+  energy: 1
+  cooldown: 1
+  pvp_power: 1
+  pvp_energy: 1
+  pvp_turns: 1
+  weather: MyString
+  damage_window_min: 1
+  damage_window_max: 1

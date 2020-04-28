@@ -1,0 +1,77 @@
+<%= form_with(model: move, local: true) do |form| %>
+  <% if move.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(move.errors.count, "error") %> prohibited this move from being saved:</h2>
+
+      <ul>
+        <% move.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pokemon_type_id %>
+    <%= form.number_field :pokemon_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.text_field :category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :power %>
+    <%= form.number_field :power %>
+  </div>
+
+  <div class="field">
+    <%= form.label :energy %>
+    <%= form.number_field :energy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cooldown %>
+    <%= form.number_field :cooldown %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pvp_power %>
+    <%= form.number_field :pvp_power %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pvp_energy %>
+    <%= form.number_field :pvp_energy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pvp_turns %>
+    <%= form.number_field :pvp_turns %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weather %>
+    <%= form.text_field :weather %>
+  </div>
+
+  <div class="field">
+    <%= form.label :damage_window_min %>
+    <%= form.number_field :damage_window_min %>
+  </div>
+
+  <div class="field">
+    <%= form.label :damage_window_max %>
+    <%= form.number_field :damage_window_max %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

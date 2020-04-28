@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  attacking_pokemon_type_id: 1
+  defending_pokemon_type_id: 1
+  effectiveness: MyString
+
+two:
+  attacking_pokemon_type_id: 1
+  defending_pokemon_type_id: 1
+  effectiveness: MyString

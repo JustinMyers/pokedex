@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  game_id: 1
+  name: MyString
+  attack: 1
+  defense: 1
+  stamina: 1
+  gen: 1
+  legendary: false
+
+two:
+  game_id: 1
+  name: MyString
+  attack: 1
+  defense: 1
+  stamina: 1
+  gen: 1
+  legendary: false

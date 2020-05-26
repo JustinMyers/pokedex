@@ -13,7 +13,7 @@ class Pokemon < ApplicationRecord
 	end
 
 	def damage_output_vs(defending_pokemon = nil, attacking = true)
-    my_moves = moves
+    	my_moves = moves
 
 		my_best_moveset = best_moveset(attacking)
 
